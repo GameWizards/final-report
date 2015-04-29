@@ -86,7 +86,38 @@ Solved!
 \end{frame}
 
 \begin{frame}
-    \frametitle{Generator, Solver} % CHRIS
+    \frametitle{Generator} % CHRIS
+    The Problem:
+    \begin{itemize}
+	\pause \item Need to generate puzzles
+	\pause \item Need to be solvable
+	\pause \item Need to follow the rules
+	\end{itemize}
+	
+	\pause The Solution:
+	\begin{itemize}
+	\pause \item Generate all positions
+	\pause \item Randomize
+	\pause \item Assign based on position
+	\pause \item Randomize pairs
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Solver} % CHRIS
+    The Problem:
+    \begin{itemize}
+	\pause \item Need to check for solutions
+	\pause \item Check random puzzles
+	\pause \item Check puzzles from the editor
+	\end{itemize}
+	
+	\pause The Solution:
+	\begin{itemize}
+	\pause \item Pull out pair blocks
+	\pause \item Make sure all pair blocks have a pair
+	\pause \item Check if the pair is on the same layer
+	\end{itemize}
 \end{frame}
 
 \begin{frame}
@@ -163,7 +194,7 @@ Solved!
     		\begin{itemize}
     			\pause \item We used the [G]odot [U]nit [T]esting framework, aka GUT.
     			\pause \item This works nicely with Travis, thanks to a Python script Hugo wrote to catch return values and report on unit test results.
-    			\pause \item This project is hosted on Bitbucket at {\url https://bitbucket.org/bitwes/gut/overview}.
+    			\pause \item 
     		\end{itemize}
 	\end{itemize}     
 \end{frame}
