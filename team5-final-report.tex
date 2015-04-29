@@ -189,19 +189,18 @@ Anttris will follow industry standards meaning that it needs to look visually pl
         \item[Entry conditions] A Puzzle Scene must be loaded and solve mode
             must be activated.
         \item[Exit conditions] Will return to game menu or puzzle editor.
-            If the game is over, an overview of results will be shown and the
-            steps taken to solve the puzzle may be saved to the disk.
+            If the game is over, an overview of results will be shown.
         \item[Participating Actors] Online player or local player.
         \item[Flow of events]:
             \begin{enumerate}
-                \item The user navigates the puzzle
+                \item The user navigates the puzzle.
                 \item If a block is selected, the block runs any associated
                     Block Action.
                 \item These Block Actions may modify the block's properties or
-                    request the addition or removal of blocks, including the
+                    request the removal of blocks, including the
                     selected block, from the Grid Manager.
                 \item This sequence is repeated until the winning block is
-                    found, the user quits, or a losing condition is met.
+                    found or the user quits.
                 \item User's actions may be mirrored on an online player's
                     screen, likewise, separate Puzzle Scenes  may be updated
                     with any moves made by other players.
@@ -225,7 +224,7 @@ Anttris will follow industry standards meaning that it needs to look visually pl
             Camera motion:
             \begin{enumerate}
                 \item User drags with a mouse or touchscreen
-                \item The camera changes position
+                \item The camera rotates
             \end{enumerate}
 
             Block selection:
