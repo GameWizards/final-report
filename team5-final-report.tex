@@ -26,31 +26,22 @@
 \maketitle
 
 \section{Project Overview} % CA
-Anttris is a unique and competitive three-dimensional puzzle game that can be played alone or against others online. The core of Anttris' gameplay lies in solving various puzzle cubes that are composed of blocks. These puzzles vary from simple to complicated and require critical thinking to complete. Players solve these puzzle cubes by interacting with individual blocks until they are all destroyed.
+Anttris is a unique and competitive three-dimensional puzzle game that can be played alone or against others online. The core of Anttris' gameplay lies in solving various puzzles that are composed of blocks. These puzzles vary from simple to complicated and require critical thinking to complete. Players solve these puzzle cubes by interacting with paired and wild blocks until they are all removed.
 
 Anttris includes two different game modes: single-player and competitive. Single-player focuses on clearing puzzles with an emphasis placed on efficiency of the solution which is measured by the amount of moves and total time. Competitive games shifts the focus to solving cubes faster than an opponent.
 
 While the two core game modes provide a fun and unique game, Anttris really shines when it comes to the ability to create your own puzzles through a built-in editor. Players are also able to use the puzzles they created when playing competitively. The goal of the game is expanded from simply solving a cube faster than your opponent to \textsl{creating} a puzzle that will challenge your opponent while you solve their puzzle first.
 \subsection{Scope and Objectives} %CA / HR
-While Anttris is a simple puzzle game, it was designed to be extendable. The core scope of the game involves creating working self-contained executables for many different platforms which include -- but are not limited to -- PC, Max and Linux. These executables will at the very least contain single-player and competitive online games modes with a working editor. To do this, we are utilizing a game development framework called Godot \cite{godot:gameengine} that provides the basic functionality of a three-dimensional game. A mixture of networking libraries and Godot's networking features will be utilized to complete the competitive game mode which will be done using a peer-to-peer direct connection. Puzzles will be both hand crafted and generated using a custom puzzle generator. To ensure that puzzles created in the editor are solvable, the game will also include a puzzle solver that will quickly and efficiently determine if a generated or editor-created puzzle can be solved.
+While Anttris is a simple puzzle game, it was designed to be extendable. The core scope of the game involves creating working self-contained executables for many different platforms which include -- but are not limited to -- PC, Max and Linux. These executables contain single-player and competitive online games modes with a working editor. To do this, we utilized a game development framework called Godot \cite{godot:gameengine} that provides the basic functionality of a three-dimensional game. A mixture of networking libraries and Godot's networking features were utilized to complete the competitive game mode which was done using a peer-to-peer direct connection. Puzzles can be both hand crafted and generated using a custom puzzle generator. To ensure that puzzles created in the editor are solvable, the game also includes a puzzle solver that quickly and efficiently determines if a generated or editor-created puzzle can be solved.
 
-To further extend the scope, Anttris may include several other features if time permits. These features may include an online server, non-block-shaped puzzles, game result statistics, hiscore list and replay mode. A main server will allow users to randomly connect to opponents instead of using direct connection. Non-block-shaped puzzles will allow for more creative freedom in the editor and give puzzles a fun look. Game result statistics will show how the game played out with a graph of time versus blocks left for the user and their component. A high-score list will let users see where they rank among their competition throughout the world. Finally, a replay mode will let the user watch a single-player or competitive game, allowing them to see where they need to improve or get tips from opponents.
-
-The main objectives of the project involve:
+The main objectives of the project that were accomplished:
 \begin{itemize}
- \item Completing core gameplay mechanics. This involves completing a single-player game that uses user input to manipulate the game's state into winning the game.
- \item Completing graphical elements. This involves creating and modifying the visual elements of the game from the textures of the 3d objects to the graphical user interface.
- \item Completing multiplayer gameplay mechanics. This involves connecting two individual players on separate machines in order for the players to compete with each other on preset puzzles or puzzles they have made themselves.
- \item Completing a puzzle generator. This involves creating an efficient way of generating unique puzzles that are both fun and solveable with varying levels of difficulty.
- \item Completing a puzzle solver. This involves creating an efficient way of solving any puzzle, generated or editor-created.
- \item Adding additional gameplay mechanics. This involves adding on additional features that we may not have enough time to complete within the project's timeline, but would like to if the base project is completed before scheduled. These ideas involve:
-  \begin{itemize}
-  \item Adding online connections through a client-server setup instead of through peer-to-peer connections.
-  \item Adding new competitive and single player game modes based on the same puzzle mechanics, such as `race the clock' or `remove all blocks'.
-  \item Adding puzzles that are not cube shaped.
-  \item Adding a high-score board.
-  \item Adding replays.
-  \end{itemize}
+ \item Completed core gameplay mechanics. This involved completing a single-player game that uses user input to manipulate the game's state into winning the game.
+ \item Completed graphical elements. This involved creating and modifying the visual elements of the game from the textures of the 3d objects to the graphical user interface.
+ \item Completed multiplayer gameplay mechanics. This involved connecting two individual players on separate machines in order for the players to compete with each other on preset puzzles or puzzles they have made themselves.
+ \item Completed a puzzle generator. This involved creating an efficient way of generating unique puzzles that are both fun and solvable with varying levels of difficulty.
+ \item Completed a puzzle solver. This involved creating an efficient way of solving any puzzle, generated or editor-created.
+ \item Added additional gameplay mechanics including non-cube-shapes puzzles.
 \end{itemize}
 \subsection{Supplementary Requirements} % CA
 \subsubsection{Interface Requirements}
@@ -98,19 +89,17 @@ Anttris will follow industry standards meaning that it needs to look visually pl
                     type
 
 % NOPE could not complete. must share IP
-                \item User shares (friendly looking) match ID with other
-                    players. These players may connect to the match
+                \item User shares IP address with other
+                    player. This player may connect to the match
                 \item Puzzle Selector appears.
                 \item The user may configure the game with this screen.
                     This
-                    entails choosing a puzzle and a game mode (edit or solve).
-                    Other players can be prevented from making such
-                    modifications.
+                    entails choosing the number of layers and a difficulty.
                 \item This Puzzle Selector will create a Puzzle Scene
                 \item The scene will change from the main menu to the Puzzle
                     Scene.
                 \item Additional view-ports will be added to the game screen.
-                These show the progress of online players by mirroring their
+                These show the progress of the opponent by mirroring their
                 puzzle behind and to the side of the local player's puzzle.
 
             \end{enumerate}
@@ -132,7 +121,7 @@ Anttris will follow industry standards meaning that it needs to look visually pl
                 \item The scene will change from the main menu to the Puzzle
                     Scene.
                 \item Additional view-ports will be added to the game screen.
-                These show the progress of online players in the same way as
+                These show the progress of the opponent in the same way as
                 the Host use case.
             \end{enumerate}
     \end{description}
@@ -151,7 +140,7 @@ Anttris will follow industry standards meaning that it needs to look visually pl
                 \item User selects the appropriate menu button.
                 \item Puzzle Selector appears.
                 \item The user may configure the game with this screen. This
-                    entails choosing a puzzle and a game mode (edit or solve).
+                    entails choosing a puzzle and its layer count and difficulty.
                 \item This Puzzle Selector will create a Puzzle Scene
                 \item The scene will change from the main menu to the Puzzle
                     Scene.
@@ -185,8 +174,7 @@ Anttris will follow industry standards meaning that it needs to look visually pl
                 \item User may press the preview button
                 \item The user will try the puzzle in Solve Puzzle mode until
                     that mode's exit conditions are met.
-                    A special banner will graphically indicate preview mode.
-                \item The solving scene will have a special button for
+                \item The solving scene will have a button for
                     returning to the editing scene
             \end{enumerate}
     \end{description}
@@ -201,19 +189,18 @@ Anttris will follow industry standards meaning that it needs to look visually pl
         \item[Entry conditions] A Puzzle Scene must be loaded and solve mode
             must be activated.
         \item[Exit conditions] Will return to game menu or puzzle editor.
-            If the game is over, an overview of results will be shown and the
-            steps taken to solve the puzzle may be saved to the disk.
+            If the game is over, an overview of results will be shown.
         \item[Participating Actors] Online player or local player.
         \item[Flow of events]:
             \begin{enumerate}
-                \item The user navigates the puzzle
+                \item The user navigates the puzzle.
                 \item If a block is selected, the block runs any associated
                     Block Action.
                 \item These Block Actions may modify the block's properties or
-                    request the addition or removal of blocks, including the
+                    request the removal of blocks, including the
                     selected block, from the Grid Manager.
                 \item This sequence is repeated until the winning block is
-                    found, the user quits, or a losing condition is met.
+                    found or the user quits.
                 \item User's actions may be mirrored on an online player's
                     screen, likewise, separate Puzzle Scenes  may be updated
                     with any moves made by other players.
@@ -237,7 +224,7 @@ Anttris will follow industry standards meaning that it needs to look visually pl
             Camera motion:
             \begin{enumerate}
                 \item User drags with a mouse or touchscreen
-                \item The camera changes position
+                \item The camera rotates
             \end{enumerate}
 
             Block selection:
@@ -405,7 +392,7 @@ Anttris is broken down into the following four subsytems: GUI, Networking, File 
         \caption{Sequence diagram for the GUI subsystem.}
     \end{figure}
 
-This subsystem manages all of the graphical user interfaces that make up the menus. Menus all inherit GUIBase to provide smooth and consistent fade in and slide out animations. The MenuCreator just takes all of the buttons in a menu and orders them nicely for consistency. The menus themselves will be object instances of GUIBase.
+This subsystem manages all of the graphical user interfaces that make up the menus. Menus all inherit GUIBase to provide smooth and consistent fade in and slide out animations. The MenuCreator takes all of the buttons in a menu and orders them nicely for consistency. The menus themselves are instances of GUIBase.
 
 \subsection{Anttris Game Engine} % CA
     \begin{figure}[H]
@@ -428,7 +415,7 @@ This subsystem manages all of the game and editor states. The game and editor ar
         \caption{Class diagram for the networking subsystem.}
     \end{figure}
 
-This subsystem will provide a central interface for networking. All games that are joined or hosted for competitive play will go through this subsystem. It updates the connection periodically and updates the opponents grid on the screen when they make new moves. This subsystem has no sequence diagram as it is self contained and is only used by outside subsystems. See the sequence diagrams for the GUI and game subsystems.
+This subsystem provides a central interface for networking. All games that are joined or hosted for competitive play will go through this subsystem. It updates the connection periodically and updates the opponents grid on the screen when they make new moves. This subsystem has no sequence diagram as it is self contained and is only used by outside subsystems. See the sequence diagrams for the GUI and game subsystems.
 
 \subsection{Anttris File Manager} % CA
     \begin{figure}[H]
@@ -544,20 +531,20 @@ Anttris began with many features in mind. Through the course of the development 
 
 All of the main features we planned for the game to have were successfully implemented. Features like single player and the editor have been created and thoroughly tested. Multiplayer games can be hosted and played with friends. Players can save and load blocks. Every feature planned out in the beggining was successfully added and tested in the game.
 
-In addition, Anttris has an official game website! The website features explainations of the game rules, convenient download links, and screenshots of the game. The website was developed by us, and can be viewed by pointing a browser at
-$$
-http://gamewizards/github.io
-$$
+In addition, Anttris has an official game website! The website features explanations of the game rules, convenient download links, and screenshots of the game. The website was developed by us, and can be viewed by pointing a browser at \href{http://gamewizards.github.io}{our github.io page}.
 
-Finally, Anttris was built using git and GitHub. This means that the whole Anttris development process and final code is available for download at
-$$http://github.com/gamewizards/anttris/$$
+
+Finally, Anttris was built using git and GitHub. This means that the whole Anttris development process and final code is available for download at \href{http://github.com/gamewizards/anttris/}{our Github repository}. The above two should be clickable links if viewed in most modern PDF readers. 
+
+In case they are not, here are the raw URLs: \url{http://gamewizards.github.io} and \url{http://github.com/gamewizards/anttris/}
+
 \subsection{Difficulties Encountered} % CHRIS
 %(Include how they were managed or mitigated)
-Throughout the project's development, we experienced a few minor difficulties. Although we experienced difficulties, out design principles allowed for us to dynamically change our design and quickly integrate new ideas to fix old ones.
+Throughout the project's development, we experienced a few minor difficulties. Although we experienced difficulties, our design principles allowed for us to dynamically change our design and quickly integrate new ideas to fix old ones.
 
-The biggest issue we ran into involved the game's original rules. While the rules were a neat idea, determining the solvability of a puzzle proved to be an NP-hard problem. After realizing the complexity of solving puzzles, we simplified the rules in a way that was interesting, fun and could be solved.
+The biggest issue we ran into involved the game's original rules. While the rules were a neat idea, determining the solvability of a puzzle proved to be an NP-hard problem. After realizing the complexity of solving puzzles, we simplified the rules in a way that was interesting, fun and could had a realistic solution-check time.
 
-Another difficulty we had involved the Godot Game Engine used to implement Anttris. The software is still currently in Beta and as such, there are still minor issues throughout the application. Most of these issues were solved through digging into Godot's source code or by finding workarounds.
+Another difficulty we had involved the Godot Game Engine used to implement Anttris. The software is still currently in Beta and as such, there are still minor issues throughout the application. One especially annoying Godot issue was version controlling some of the resource files that were compiled into binary. This meant that only one person could work on scene files at a time. This lead to occasional conflicts when two people mistakenly worked on the same scene file. Another one was with using globals within Anttris. Due to the way that the scene tree works, any globally loaded objects in the scene tree get deleted on scene change. Most of the other issues were solved through digging into Godot's source code or by finding workarounds.
 \subsection{Journal of Project Activities} % SEAN
 %(This is your group journal)
 % add Github commit logs?
@@ -590,6 +577,12 @@ Below are some figures taken from both Slack (communication statistics) and Gith
         \centering
         \includegraphics[width=4.5in]{commitsexample.png}
         \caption{An Example of Commits to master.}\label{code:commits}
+\end{figure}
+
+\begin{figure}[H]
+        \centering
+        \includegraphics[width=4.5in]{CommitStats.png}
+        \caption{Total commits sorted by additions. 'Trigition' is Skyler Manzanarez pushing from a friend's computer.}\label{code:commitstats}
 \end{figure}
 
 As for Slack statistics, we are approaching 10,000 messages sent in total. We have multiple integrations, including Travis CI, Github, and Google Docs, as shown in Figure \ref{slack:stats}. Figure \ref{slack:window} shows an example of our Slack chat.
