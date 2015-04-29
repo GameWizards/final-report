@@ -439,8 +439,7 @@ This subsystem will provide a central interface for networking. All games that a
 
 This subsystem will provide a central interface for file management. Options will be loaded and saved from here as well as any puzzles created in the editor.
 \section{Human Interfaces} % CA / SM
-These are not mockups, they are screenshots from the development version.
-
+Screenshots included below are final in-game designs.
 	\begin{figure}[H]
         \centering
         \includegraphics[width=4.5in]{Anttris_MenuFlow.png}
@@ -487,7 +486,7 @@ In order for the user to play multiplayer matches, the user will need an interne
 
 Anttris will need filesystem access in order to create, write, and modify save data and scores for each puzzle. Additionally, the Puzzle Editor will need to be able to read and write data for user-generated puzzles.
 % ST, BC
-\section{Testing Plan & Results}
+\section{Testing Plan \& Results}
 % Must revise this after actually running tests
 
 In order to test that the game is working properly we will be using Black Box and White Box testing methods. Using these methods we can test the game from the outside-in by making sure that the functionality of the interface preforms the correct actions then working our way to the coding level. This approach will prevent more errors and bugs in the early stages of testing, since we will not be working with the code directly at the start. Any errors and bugs we encounter will be documented and recorded for future reference.
@@ -543,6 +542,11 @@ The last part of our testing plan is user testing. User testing will allow for v
 % (What is and is not working. Was the plan maintained? Was the project modified from the original proposal? Etc.)
 \subsection{Difficulties Encountered} % CHRIS
 %(Include how they were managed or mitigated)
+Throughout the project's development, we experienced a few minor difficulties. Although we experienced difficulties, out design principles allowed for us to dynamically change our design and quickly integrate new ideas to fix old ones.
+
+The biggest issue we ran into involved the game's original rules. While the rules were a neat idea, determining the solvability of a puzzle proved to be an NP-hard problem. After realizing the complexity of solving puzzles, we simplified the rules in a way that was interesting, fun and could be solved.
+
+Another difficulty we had involved the Godot Game Engine used to implement Anttris. The software is still currently in Beta and as such, there are still minor issues throughout the application. Most of these issues were solved through digging into Godot's source code or by finding workarounds.
 \subsection{Journal of Project Activities} % SEAN
 %(This is your group journal)
 % add Github commit logs?
