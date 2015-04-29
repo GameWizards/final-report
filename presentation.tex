@@ -237,18 +237,20 @@
     			\pause \item Not to mention free for open source projects.
     			\pause \item Godot has a headless GNU/Linux server project which turned out to be perfect for this, with some scripting (more on this shortly)
     		\end{itemize}
-    		\pause \item Branches
-    		\begin{itemize}
-    			\pause \item We used branches and pull requests to merge changes.
-    			\pause \item This facilites easy code reviews before things get broken!
-    		\end{itemize}
     \end{itemize}
 \end{frame}
 
 \begin{frame}
     \frametitle{Workflow, Continued}
     \begin{itemize}
-    		\pause \item Unit testing
+    \pause \item Branches
+    		\begin{itemize}
+    			\pause \item We used branches and pull requests to merge changes.
+    			\pause \item This facilites easy code reviews before things get broken!
+    		\end{itemize}
+    	\pause \item Unit testing
+    %\begin{itemize}
+    		
     		\begin{itemize}
     			\pause \item We used the [G]odot [U]nit [T]esting framework, aka GUT.
     			\pause \item This works nicely with Travis, thanks to a Python script Hugo wrote to catch return values and report on unit test results.
