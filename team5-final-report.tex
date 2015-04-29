@@ -396,7 +396,7 @@ Anttris is broken down into the following four subsytems: GUI, Networking, File 
         \caption{Sequence diagram for the GUI subsystem.}
     \end{figure}
 
-This subsystem manages all of the graphical user interfaces that make up the menus. Menus all inherit GUIBase to provide smooth and consistent fade in and slide out animations. The MenuCreator just takes all of the buttons in a menu and orders them nicely for consistency. The menus themselves will be object instances of GUIBase.
+This subsystem manages all of the graphical user interfaces that make up the menus. Menus all inherit GUIBase to provide smooth and consistent fade in and slide out animations. The MenuCreator takes all of the buttons in a menu and orders them nicely for consistency. The menus themselves are instances of GUIBase.
 
 \subsection{Anttris Game Engine} % CA
     \begin{figure}[H]
@@ -419,7 +419,7 @@ This subsystem manages all of the game and editor states. The game and editor ar
         \caption{Class diagram for the networking subsystem.}
     \end{figure}
 
-This subsystem will provide a central interface for networking. All games that are joined or hosted for competitive play will go through this subsystem. It updates the connection periodically and updates the opponents grid on the screen when they make new moves. This subsystem has no sequence diagram as it is self contained and is only used by outside subsystems. See the sequence diagrams for the GUI and game subsystems.
+This subsystem provides a central interface for networking. All games that are joined or hosted for competitive play will go through this subsystem. It updates the connection periodically and updates the opponents grid on the screen when they make new moves. This subsystem has no sequence diagram as it is self contained and is only used by outside subsystems. See the sequence diagrams for the GUI and game subsystems.
 
 \subsection{Anttris File Manager} % CA
     \begin{figure}[H]
