@@ -89,12 +89,15 @@ Anttris will follow industry standards meaning that it needs to look visually pl
         \item[Entry conditions] Internet connection.
         \item[Exit conditions] Will return to game menu. All players
             disconnected or all puzzles have been solved.
+% NOPE on one solution
         \item[Participating Actors] Online player and local player.
         \item[Flow of events]:
             \begin{enumerate}
                 \item The user presses the appropriate menu button.
                 \item User creates a game, selects number of players and game
                     type
+
+% NOPE could not complete. must share IP
                 \item User shares (friendly looking) match ID with other
                     players. These players may connect to the match
                 \item Puzzle Selector appears.
@@ -107,8 +110,8 @@ Anttris will follow industry standards meaning that it needs to look visually pl
                 \item The scene will change from the main menu to the Puzzle
                     Scene.
                 \item Additional view-ports will be added to the game screen.
-                These show the progress of online players in an interface
-                similar to the local player's puzzle.
+                These show the progress of online players by mirroring their
+                puzzle behind and to the side of the local player's puzzle.
 
             \end{enumerate}
     \end{description}
@@ -124,16 +127,13 @@ Anttris will follow industry standards meaning that it needs to look visually pl
         \item[Flow of events]:
             \begin{enumerate}
                 \item The user presses the appropriate menu button.
-                \item Puzzle Selector appears.
-                \item The user may configure the game with this screen, if
-                    the game host allows it. This would
-                    entail choosing a puzzle and a game mode (edit or solve).
-                \item This Puzzle Selector will create a Puzzle Scene
+% NOPE could not complete. must receive map from host and not through puzzle selector
+                \item This host will send a Puzzle Scene
                 \item The scene will change from the main menu to the Puzzle
                     Scene.
                 \item Additional view-ports will be added to the game screen.
-                These show the progress of online players in an interface
-                similar to the local player's puzzle.
+                These show the progress of online players in the same way as
+                the Host use case.
             \end{enumerate}
     \end{description}
 \end{mdframed}
@@ -144,7 +144,7 @@ Anttris will follow industry standards meaning that it needs to look visually pl
     \begin{description}
         \item[Entry conditions] Menu must be present.
         \item[Exit conditions] Will return to game menu. Puzzle has been
-            solved.
+            solved or user wishes to return to the menu.
         \item[Participating Actors] Local player.
         \item[Flow of events]:
             \begin{enumerate}
@@ -561,19 +561,19 @@ Another difficulty we had involved the Godot Game Engine used to implement Anttr
 \subsection{Journal of Project Activities} % SEAN
 %(This is your group journal)
 % add Github commit logs?
-Team organization was important, so we organized weekly in-person meetings at various locations on campus. Most commonly we used Cramer 213, but also met in the library a few times. For all other times, we had all team communications centralized to Slack, so that everyone could talk to the team in an organized manner at any time of the day, as well as get centralized notifications from Github and Travis CI. 
+Team organization was important, so we organized weekly in-person meetings at various locations on campus. Most commonly we used Cramer 213, but also met in the library a few times. For all other times, we had all team communications centralized to Slack, so that everyone could talk to the team in an organized manner at any time of the day, as well as get centralized notifications from Github and Travis CI.
 
-We used a modified Scrum methodology to organize the project. Agile development is great, but the normal schedules used by Agile teams are not necessarily optimal for students, so we settled on mainly using sprints as general guidelines for milestones. We also did not use daily in person standups, preferring instead to utilize Slack to talk constantly about what we were doing. 
+We used a modified Scrum methodology to organize the project. Agile development is great, but the normal schedules used by Agile teams are not necessarily optimal for students, so we settled on mainly using sprints as general guidelines for milestones. We also did not use daily in person standups, preferring instead to utilize Slack to talk constantly about what we were doing.
 
 \subsubsection{Project Statistics}
-Below are some figures taken from both Slack (communication statistics) and Github (coding statistics.) Please note that Github unfortunately only reports statistics for the default branch (in our case, master.) Thus, this data may not accurately reflect work put into branches. This is particularly true of Figure \ref{code:freq}, as it reflects a lot of the code that was merged into master towards the end of the project cycle. Additionally, Figure \ref{code:graph} is the state of the network graph on April 28 at about 10 PM. It will probably change a bit as more work is done, but it reflects how our branches have been fitting together. 
+Below are some figures taken from both Slack (communication statistics) and Github (coding statistics.) Please note that Github unfortunately only reports statistics for the default branch (in our case, master.) Thus, this data may not accurately reflect work put into branches. This is particularly true of Figure \ref{code:freq}, as it reflects a lot of the code that was merged into master towards the end of the project cycle. Additionally, Figure \ref{code:graph} is the state of the network graph on April 28 at about 10 PM. It will probably change a bit as more work is done, but it reflects how our branches have been fitting together.
 
 \begin{figure}[H]
         \centering
         \includegraphics[width=4.5in]{punchcard.png}
         \caption{Github Punchcard}
 \end{figure}
-    
+
 \begin{figure}[H]
         \centering
         \includegraphics[width=4.5in]{codefrequency.png}
@@ -592,7 +592,7 @@ Below are some figures taken from both Slack (communication statistics) and Gith
         \caption{An Example of Commits to master.}\label{code:commits}
 \end{figure}
 
-As for Slack statistics, we are approaching 10,000 messages sent in total. We have multiple integrations, including Travis CI, Github, and Google Docs, as shown in Figure \ref{slack:stats}. Figure \ref{slack:window} shows an example of our Slack chat. 
+As for Slack statistics, we are approaching 10,000 messages sent in total. We have multiple integrations, including Travis CI, Github, and Google Docs, as shown in Figure \ref{slack:stats}. Figure \ref{slack:window} shows an example of our Slack chat.
 
 \begin{figure}[H]
         \centering

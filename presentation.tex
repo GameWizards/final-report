@@ -155,7 +155,15 @@
 
 \section{Implementation}
 \begin{frame}
-  \frametitle{Approach} % Hugo? idk
+  \frametitle{Approach}
+  \begin{description}
+      \item[Customer Requirements] a fast, multiplatform  block puzzle game
+          with multiplayer and an editor.
+      \item[System Design] We based it heavily on Godot classes and
+          previous work with prototypes (a Three.js and a Unity prototype)
+      \item[Object Design] GridMan, AbstractBlock, CameraControl
+      \item[Implementation and Testing] Gut.gd covered silly bugs
+  \end{description}
 \end{frame}
 
 \begin{frame}
@@ -168,6 +176,7 @@
     \begin{itemize}
         \pause \item Domain specific language
         \pause \item Object oriented, python-like
+        \pause \item Automatic concurrency, automatic resource caching
         \pause \item Dynamic, bugs easy to introduce
         \pause \item Example: methods passed as (object, string) tuples
 
@@ -191,7 +200,7 @@
 \begin{frame}
     \frametitle{Godot} % HUGO
     \begin{itemize}
-    \item GoDot was easy to learn.
+    \item Godot was easy to learn.
     \pause \item Library consisting of 400+ classes, less so
     \pause \item Limited use of the neat GUI interface, binary files don't
         agree with Github
