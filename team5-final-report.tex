@@ -522,6 +522,13 @@ After we tested the Puzzle Editor, we tested whether or not we could solve puzzl
 \subsection{Multiplayer Game Mode}
 The Multiplayer Game Mode was the last thing we tested since it involved the interactions between two computers. We tested the Create and Host Match options like we did with the menu options and the different game modes similarly to the single-player and Multiplayer game modes. The most important thing we needed to test for the multiplayer was the interactions between the two players. In order to test the interactions, we needed to make sure that the two players were able to connect to each other and preform actions in the interface and when solving puzzles with each other. In the end, we got multiplayer to work between two players on the same network.
 
+\subsection{Unit Testing}
+Part of ensuring that critical calls in our code worked correctly was implementing unit testing. Fortunately, a member of Godot's community authored a handy test driven development framework, known as GUT, the [G]odot [U]nit [T]esting framework. \cite{gut:tdd} 
+
+Since we had decided early on to incorporate continuous integration into our workflow, we wanted to have our unit tests be run on Travis, so that our tests would run every time a build triggered. This alerts to issues immediately so nothing gets broken. We mainly tested methods used frequently to get and set various things in order to ensure that they were behaving as expected. 
+
+Hugo devised a Python script to interface with the Godot headless server on the test server so that the multitude of return values used were caught in a useful manner. 
+
 \subsection{White Box Testing}
 The second part of the testing plan, we used the White Box testing method in which we will be dealing with the actual code of the game. We need to make sure that the code of the game is working correctly. We needed to make sure the code of the game was working correctly.
 Changes to the code was based on the errors and bugs we found during the black box testing. We treated the code as units and fixed only the function or object that needed fixing then reintegrated it back into the code. After reintegrating the newly fixed code, we needed to test the section of the game that we made changes to.
