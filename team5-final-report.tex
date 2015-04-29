@@ -26,31 +26,22 @@
 \maketitle
 
 \section{Project Overview} % CA
-Anttris is a unique and competitive three-dimensional puzzle game that can be played alone or against others online. The core of Anttris' gameplay lies in solving various puzzle cubes that are composed of blocks. These puzzles vary from simple to complicated and require critical thinking to complete. Players solve these puzzle cubes by interacting with individual blocks until they are all destroyed.
+Anttris is a unique and competitive three-dimensional puzzle game that can be played alone or against others online. The core of Anttris' gameplay lies in solving various puzzles that are composed of blocks. These puzzles vary from simple to complicated and require critical thinking to complete. Players solve these puzzle cubes by interacting with paired and wild blocks until they are all removed.
 
 Anttris includes two different game modes: single-player and competitive. Single-player focuses on clearing puzzles with an emphasis placed on efficiency of the solution which is measured by the amount of moves and total time. Competitive games shifts the focus to solving cubes faster than an opponent.
 
 While the two core game modes provide a fun and unique game, Anttris really shines when it comes to the ability to create your own puzzles through a built-in editor. Players are also able to use the puzzles they created when playing competitively. The goal of the game is expanded from simply solving a cube faster than your opponent to \textsl{creating} a puzzle that will challenge your opponent while you solve their puzzle first.
 \subsection{Scope and Objectives} %CA / HR
-While Anttris is a simple puzzle game, it was designed to be extendable. The core scope of the game involves creating working self-contained executables for many different platforms which include -- but are not limited to -- PC, Max and Linux. These executables will at the very least contain single-player and competitive online games modes with a working editor. To do this, we are utilizing a game development framework called Godot \cite{godot:gameengine} that provides the basic functionality of a three-dimensional game. A mixture of networking libraries and Godot's networking features will be utilized to complete the competitive game mode which will be done using a peer-to-peer direct connection. Puzzles will be both hand crafted and generated using a custom puzzle generator. To ensure that puzzles created in the editor are solvable, the game will also include a puzzle solver that will quickly and efficiently determine if a generated or editor-created puzzle can be solved.
+While Anttris is a simple puzzle game, it was designed to be extendable. The core scope of the game involves creating working self-contained executables for many different platforms which include -- but are not limited to -- PC, Max and Linux. These executables contain single-player and competitive online games modes with a working editor. To do this, we utilized a game development framework called Godot \cite{godot:gameengine} that provides the basic functionality of a three-dimensional game. A mixture of networking libraries and Godot's networking features were utilized to complete the competitive game mode which was done using a peer-to-peer direct connection. Puzzles can be both hand crafted and generated using a custom puzzle generator. To ensure that puzzles created in the editor are solvable, the game also includes a puzzle solver that quickly and efficiently determines if a generated or editor-created puzzle can be solved.
 
-To further extend the scope, Anttris may include several other features if time permits. These features may include an online server, non-block-shaped puzzles, game result statistics, hiscore list and replay mode. A main server will allow users to randomly connect to opponents instead of using direct connection. Non-block-shaped puzzles will allow for more creative freedom in the editor and give puzzles a fun look. Game result statistics will show how the game played out with a graph of time versus blocks left for the user and their component. A high-score list will let users see where they rank among their competition throughout the world. Finally, a replay mode will let the user watch a single-player or competitive game, allowing them to see where they need to improve or get tips from opponents.
-
-The main objectives of the project involve:
+The main objectives of the project that were accomplished:
 \begin{itemize}
- \item Completing core gameplay mechanics. This involves completing a single-player game that uses user input to manipulate the game's state into winning the game.
- \item Completing graphical elements. This involves creating and modifying the visual elements of the game from the textures of the 3d objects to the graphical user interface.
- \item Completing multiplayer gameplay mechanics. This involves connecting two individual players on separate machines in order for the players to compete with each other on preset puzzles or puzzles they have made themselves.
- \item Completing a puzzle generator. This involves creating an efficient way of generating unique puzzles that are both fun and solveable with varying levels of difficulty.
- \item Completing a puzzle solver. This involves creating an efficient way of solving any puzzle, generated or editor-created.
- \item Adding additional gameplay mechanics. This involves adding on additional features that we may not have enough time to complete within the project's timeline, but would like to if the base project is completed before scheduled. These ideas involve:
-  \begin{itemize}
-  \item Adding online connections through a client-server setup instead of through peer-to-peer connections.
-  \item Adding new competitive and single player game modes based on the same puzzle mechanics, such as `race the clock' or `remove all blocks'.
-  \item Adding puzzles that are not cube shaped.
-  \item Adding a high-score board.
-  \item Adding replays.
-  \end{itemize}
+ \item Completed core gameplay mechanics. This involved completing a single-player game that uses user input to manipulate the game's state into winning the game.
+ \item Completed graphical elements. This involved creating and modifying the visual elements of the game from the textures of the 3d objects to the graphical user interface.
+ \item Completed multiplayer gameplay mechanics. This involved connecting two individual players on separate machines in order for the players to compete with each other on preset puzzles or puzzles they have made themselves.
+ \item Completed a puzzle generator. This involved creating an efficient way of generating unique puzzles that are both fun and solvable with varying levels of difficulty.
+ \item Completed a puzzle solver. This involved creating an efficient way of solving any puzzle, generated or editor-created.
+ \item Added additional gameplay mechanics including non-cube-shapes puzzles.
 \end{itemize}
 \subsection{Supplementary Requirements} % CA
 \subsubsection{Interface Requirements}
@@ -590,6 +581,12 @@ Below are some figures taken from both Slack (communication statistics) and Gith
         \centering
         \includegraphics[width=4.5in]{commitsexample.png}
         \caption{An Example of Commits to master.}\label{code:commits}
+\end{figure}
+
+\begin{figure}[H]
+        \centering
+        \includegraphics[width=4.5in]{CommitStats.png}
+        \caption{Total commits sorted by additions.}\label{code:commitstats}
 \end{figure}
 
 As for Slack statistics, we are approaching 10,000 messages sent in total. We have multiple integrations, including Travis CI, Github, and Google Docs, as shown in Figure \ref{slack:stats}. Figure \ref{slack:window} shows an example of our Slack chat.
