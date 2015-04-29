@@ -482,12 +482,14 @@ Our testing plan is as follows:
 \begin{enumerate}
 \item Black Box Testing
 \item White Box Testing
-\item User Testing
 \end{enumerate}
 
-For the first part of the testing plan, we will be testing the game on multiple physical computers to make sure the interface of the game preforms correctly. Testing the game on multiple machines will allow for a diverse testing experience, and will confirm whether or not our game can work on multiple systems. Once we know the game can run on each of the tested machines, we will begin testing the interface of the game.
-The interface of the game is what the user will be interacting with, so we want to make sure that the interactions of each function work correctly and display the correct information to the user. To test the interface of the game we will:
+For the first part of the testing plan, we tested the game on multiple physical computers to make sure the interface of the game preformed correctly. Testing the game on multiple machines allowed for a diverse testing experience, and confirmed whether or not our game can work on multiple systems. Once we knew that our game could run on each of the tested machines, we began testing the interface of the game.
 
+The interface of the game is what the user will be interacting with, so we wanted to make sure that the interactions of each function worked correctly and displayed the correct information to the user.
+
+ To test the interface of the game we:
+ 
 \begin{enumerate}
 \item Test the menu options
 \item Test single-player Game Mode (Single-player, New Game, Continue Game)
@@ -518,15 +520,13 @@ We used a similar testing method for the edit puzzle option since it is similar 
 After we tested the Puzzle Editor, we tested whether or not we could solve puzzles. Using pre-constructed basic puzzles, we solved each of the puzzles and confirmed that each of the blocks preformed the correct action when clicked, and tested if the game recorded the scores correctly and ended the game once the goal block was reached. Each of the tester puzzles, consisted of each type of block and possible interactions so we were able to make sure that the game flow was not ruined when blocks preformed their actions. Solving Puzzles was the last step in testing the single-player mode and was the most important to have working. In the end, the single-player mode worked how we wished.
 
 \subsection{Multiplayer Game Mode}
-Multiplayer Game Mode will be the last thing we test since it involves the interactions between two computers. We will be testing the Create and Host Match options like we did the menu options and the different game modes similarly to the single-player and Multiplayer game modes. The most important thing we need to test for the multiplayer are the interactions between the two players. In order to test the interactions, we need to make sure that two players are able to connect to each other and preform actions in the interface and when solving puzzles with each other.
+The Multiplayer Game Mode was the last thing we tested since it involved the interactions between two computers. We tested the Create and Host Match options like we did with the menu options and the different game modes similarly to the single-player and Multiplayer game modes. The most important thing we needed to test for the multiplayer was the interactions between the two players. In order to test the interactions, we needed to make sure that the two players were able to connect to each other and preform actions in the interface and when solving puzzles with each other. In the end, we got multiplayer to work between two players on the same network.
 
 \subsection{White Box Testing}
-The second part of the testing plan, we will be using the White Box testing method in which we will be dealing with the actual code of the game. We need to make sure that the code of the game is working correctly.
-Changes to the code will be based on the errors and bugs we find during the black box testing. We will be treating the code as units and fixing only the function or object that needs fixing then reintegrating it back into the code. After reintegrating the newly fixed code, we will need to test the section of the game that we made changes to. For instance if we need to make changes to the way a tool works in the puzzle creator, we will make the change to the tool and test only the puzzle creator section of the game.
-By making changes and fixing problems with the documented bugs and errors, and breaking the code into units, we will be able to efficiently make the necessary changes to the game. Once a group of changes have been made, we will test the game again using black box testing in order to make sure that the changes we made to the game did not affect any of the other section of the game. If any errors or bugs are found, they will be documented and recorded and any necessary changes will be made, and they will be tested again on the physical machine. After these changes have been implemented and test effectively, we will move on to the next stage of testing; user testing.
+The second part of the testing plan, we used the White Box testing method in which we will be dealing with the actual code of the game. We need to make sure that the code of the game is working correctly. We needed to make sure the code of the game was working correctly.
+Changes to the code was based on the errors and bugs we found during the black box testing. We treated the code as units and fixed only the function or object that needed fixing then reintegrated it back into the code. After reintegrating the newly fixed code, we needed to test the section of the game that we made changes to.
+By making the changes and fixing the problems with the documented bugs and errors, and breaking the code into units, we were able to efficiently make the necessary changes to the game. This was primarily done with the Puzzle Editor and the Networking between players. Once we made a group of changes, we tested the game again using the black box testing method in order to make sure the changes we made to the game did not affect any of the other sections of the game. Errors and bugs we found were documented and recorded and any necessary changes that were made. These changes were tested again on the physical machine. After these changes were implemented and tested effectively, we moved on to the next stage of testing; user testing.
 
-\subsection{User Testing}
-The last part of our testing plan is user testing. User testing will allow for varying users to test the game and provide feedback about the game. This method of testing will help us gather information and discovery any bugs or errors that we could not find during the earlier parts of testing. For this part, we will ask a variety of users to test the game and fill out a survey generated by us. A few of the questions on the survey will ask about how the complexity, enjoyability, functionality, of the game and if the user came across any bugs or errors while playing the game. Using the survey, we can make any changes necessary to ensure the game is fully functional and working properly before we present our final product.
 % ST, BC
 
 \section{Project Status and Summary}
