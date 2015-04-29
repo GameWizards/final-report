@@ -1,4 +1,6 @@
 \documentclass{beamer}
+\usepackage{mdframed}
+\usepackage{fancyvrb}
 \usetheme{Berkeley}
 \usecolortheme{whale}
 \title{Anttris -- CSE 326}
@@ -14,33 +16,7 @@
 
 \begin{document}
 
-\begin{frame}
-\titlepage
-\end{frame}
-
-\begin{frame}
-    \frametitle{Example frame}
-    Items go!
-\begin{itemize}
-\pause \item A!
-\pause \item B!
-\pause \item C!
-\end{itemize}
-
-\begin{alertblock}{Solution}
-Solved!
-\end{alertblock}
-
-\end{frame}
-
 \section{Paper Summary}
-\begin{frame}
-    These pics don't work.
-\includegraphics[width=0.4\linewidth]{yellow_bands.png}
-\pause
-\includegraphics[width=0.5\linewidth]{many_layouts.png}
-\end{frame}
-
 
 %%%% Stuff from Shin's slides
 
@@ -53,11 +29,26 @@ Solved!
 
 %% from Shin's slides
 \begin{frame}
-  \frametitle{Motivation} % 
+  \frametitle{Motivation} %
 \end{frame}
 
 \begin{frame}
   \frametitle{Objective} % SKYLER: rub it in
+  \begin{itemize}
+	\item Project Considerations
+	\begin{itemize}
+		\pause \item Size
+		\pause \item Entertainment Value
+		\pause \item Portability
+	\end{itemize}
+	\pause \item Puzzle Game
+	\pause \item Competitive Edge
+	\begin{itemize}
+		\pause \item Play Against A Friend
+		\pause \item See Opponent Playing
+	\end{itemize}
+	\pause \item Custom Puzzles
+  \end{itemize}
 \end{frame}
 
 %% ----- %%
@@ -83,6 +74,12 @@ Solved!
 
 \begin{frame}
     \frametitle{Editor} % HUGO
+    \begin{itemize}
+        \item Add/replace/remove different block types
+        \item Load/save
+        \pause \item Mobile friendly interface
+        \pause \item Layer management: create random, remove current (Stretch goal)
+    \end{itemize}
 \end{frame}
 
 \begin{frame}
@@ -93,7 +90,7 @@ Solved!
 	\pause \item Need to be solvable
 	\pause \item Need to follow the rules
 	\end{itemize}
-	
+
 	\pause The Solution:
 	\begin{itemize}
 	\pause \item Generate all positions
@@ -111,7 +108,7 @@ Solved!
 	\pause \item Check random puzzles
 	\pause \item Check puzzles from the editor
 	\end{itemize}
-	
+
 	\pause The Solution:
 	\begin{itemize}
 	\pause \item Pull out pair blocks
@@ -123,7 +120,7 @@ Solved!
 \begin{frame}
     \frametitle{Networking} % SKYLER
     \begin{itemize}
-        \pause \item Multiplayer
+        \item Multiplayer
         \pause \item P2P
         \begin{itemize}
             \pause \item Non-random Opponents
@@ -142,13 +139,13 @@ Solved!
 \begin{frame}
     \frametitle{Rules} % CHRIS
     \begin{itemize}
-	\pause \item The puzzle grid
+	\item The puzzle grid
 	\pause \item Pair blocks
 	\pause \item Laser blocks
 	\pause \item Wild blocks
 	\pause \item Score
 	\end{itemize}
-    
+
 \end{frame}
 
 \begin{frame}
@@ -163,10 +160,43 @@ Solved!
 
 \begin{frame}
     \frametitle{Godot} % HUGO
+    % blank on purpose
+\end{frame}
+
+\begin{frame}[fragile]
+    \frametitle{GD Script} % HUGO
+    \begin{itemize}
+        \pause \item Domain specific language
+        \pause \item Object oriented, python-like
+        \pause \item Dynamic, bugs easy to introduce
+        \pause \item Example: methods passed as (object, string) tuples
+
+        \pause \item Files are classes
+
+        \begin{Verbatim}[numbers=left]
+             extends ``Food.gd''
+
+             func fry():
+                 return self.fried()
+
+             class GrillFuel:
+                 ...
+        \end{Verbatim}
+
+        \pause \item Tightly integrated with all of Godot's C++ classes. Fast
+            where it counts.
+    \end{itemize}
 \end{frame}
 
 \begin{frame}
-    \frametitle{GD Script} % HUGO 
+    \frametitle{Godot} % HUGO
+    \begin{itemize}
+    \item GoDot was easy to learn.
+    \pause \item Library consisting of 400+ classes, less so
+    \pause \item Limited use of the neat GUI interface, binary files don't
+        agree with Github
+    \end{itemize}
+
 \end{frame}
 
 \begin{frame}
@@ -176,7 +206,7 @@ Solved!
 
 \section{Workflow} % SEAN
 \begin{frame}
-    \frametitle{Our Workflow} 
+    \frametitle{Our Workflow}
     \begin{itemize}
     		\pause \item We used Github as our source control.
     		\pause \item To facilitate an agile workflow we used Zenhub.
@@ -188,7 +218,7 @@ Solved!
     		\pause \item Continuous Integration
     		\begin{itemize}
     			\pause \item Travis CI. It's awesome and everyone should try it!
-    			\pause \item Not to mention free for open source projects. 
+    			\pause \item Not to mention free for open source projects.
     		\end{itemize}
     		\pause \item Branches
     		\begin{itemize}
@@ -207,7 +237,7 @@ Solved!
     			\pause \item This works nicely with Travis, thanks to a Python script Hugo wrote to catch return values and report on unit test results.
     			\pause \item This project is hosted on Bitbucket at {\url https://bitbucket.org/bitwes/gut/overview}.
     		\end{itemize}
-	\end{itemize}     
+	\end{itemize}
 \end{frame}
 
 \begin{frame}
@@ -216,6 +246,18 @@ Solved!
 
 \begin{frame}
   \frametitle{What we learned} % SKYLER
+  \begin{itemize}
+	\pause \item Nothing.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{What we learned}
+  \begin{itemize}
+	\item Power of Starting Early
+	\pause \item Risk of Distributed Workload
+	\pause \item Applicability of Agile Methods
+  \end{itemize}
 \end{frame}
 
 %% From Dr Shin's slides
@@ -223,7 +265,5 @@ Solved!
   \frametitle{Demo} % ALL, BRING ANDROIDS, LAPTOPS (OSX, WINDOWS, LINUX)
 \end{frame}
 %% ------ %%
-
-
 
 \end{document}
