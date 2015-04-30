@@ -9,8 +9,8 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="558.21252"
-   height="572.31018"
+   width="459.4375"
+   height="571.80176"
    id="svg4629"
    version="1.1"
    inkscape:version="0.48.5 r10040"
@@ -42,13 +42,13 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.4"
-     inkscape:cx="317.40806"
-     inkscape:cy="299.30296"
+     inkscape:zoom="1.979899"
+     inkscape:cx="212.78174"
+     inkscape:cy="217.70812"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
-     inkscape:window-width="1361"
+     inkscape:window-width="1534"
      inkscape:window-height="1061"
      inkscape:window-x="0"
      inkscape:window-y="0"
@@ -61,8 +61,12 @@
      inkscape:guide-bbox="true">
     <sodipodi:guide
        orientation="0,1"
-       position="122.22846,413.53608"
+       position="121.72846,413.02837"
        id="guide6365" />
+    <sodipodi:guide
+       orientation="1,0"
+       position="-251.21429,193.77801"
+       id="guide6882" />
   </sodipodi:namedview>
   <metadata
      id="metadata4634">
@@ -72,7 +76,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -80,7 +84,7 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(15.5,-18.760024)">
+     transform="translate(15,-18.76073)">
     <g
        id="g4589"
        transform="translate(29.235236,-4.6767701)"
@@ -138,8 +142,8 @@
          x="24.348459"
          sodipodi:role="line" /></text>
     <path
-       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 0,118.98123 497.21676,0"
+       style="fill:none;stroke:#000000;stroke-width:0.9293347px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 0,118.98123 429.42772,0"
        id="path4662"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cc" />
@@ -346,7 +350,7 @@
          sodipodi:role="line"
          x="283.30151"
          y="80.868416"
-         style="font-size:7px;text-align:center;text-anchor:middle">Camera</tspan><tspan
+         style="font-size:7px;text-align:center;text-anchor:middle">GridView</tspan><tspan
          id="tspan6425"
          sodipodi:role="line"
          x="283.30151"
@@ -362,64 +366,6 @@
          y="107.11842"
          id="tspan6429"
          style="font-size:7px" /></text>
-    <rect
-       style="fill:none;stroke:#000000;stroke-width:1.02116597;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:3.7"
-       id="rect6449"
-       width="83.349884"
-       height="33.678822"
-       x="358.3797"
-       y="60.601345"
-       rx="4.6443715"
-       ry="3.5924087" />
-    <text
-       xml:space="preserve"
-       style="font-size:12px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-       x="399.22501"
-       y="53.627117"
-       id="text6451"
-       sodipodi:linespacing="125%"><tspan
-         id="tspan6453"
-         sodipodi:role="line"
-         x="399.22501"
-         y="53.627117"
-         style="font-size:7px;text-align:center;text-anchor:middle">&lt;&lt;Control&gt;&gt;</tspan><tspan
-         sodipodi:role="line"
-         x="399.22501"
-         y="62.377117"
-         style="font-size:7px"
-         id="tspan6455" /><tspan
-         sodipodi:role="line"
-         x="399.22501"
-         y="71.127121"
-         id="tspan6457"
-         style="font-size:7px" /></text>
-    <text
-       sodipodi:linespacing="125%"
-       id="text6459"
-       y="80.868416"
-       x="399.73007"
-       style="font-size:12px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-       xml:space="preserve"><tspan
-         style="font-size:7px;text-align:center;text-anchor:middle"
-         y="80.868416"
-         x="399.73007"
-         sodipodi:role="line"
-         id="tspan6461">GridManager</tspan><tspan
-         style="font-size:7px;text-align:center;text-anchor:middle"
-         y="89.618416"
-         x="399.73007"
-         sodipodi:role="line"
-         id="tspan6463" /><tspan
-         id="tspan6465"
-         style="font-size:7px"
-         y="98.368416"
-         x="399.73007"
-         sodipodi:role="line" /><tspan
-         style="font-size:7px"
-         id="tspan6467"
-         y="107.11842"
-         x="399.73007"
-         sodipodi:role="line" /></text>
     <path
        style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:6, 2;stroke-dashoffset:0;marker-end:none"
        d="m 281.97675,94.147895 0,481.422285"
@@ -434,20 +380,6 @@
        y="177.5341"
        rx="4.7317953"
        ry="3.5" />
-    <path
-       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:6, 2;stroke-dashoffset:0;marker-end:none"
-       d="m 398.40532,94.147895 0,481.422285"
-       id="path6493"
-       inkscape:connector-curvature="0" />
-    <rect
-       ry="2.286958"
-       rx="4.7001424"
-       y="308.42569"
-       x="388.61664"
-       height="217.35631"
-       width="24.577345"
-       id="rect6495"
-       style="fill:#e4e4e4;fill-opacity:1;stroke:#000000;stroke-width:0.80265373;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0" />
     <path
        style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Lend)"
        d="m 165.12202,225.16555 106.31856,0.37881"
@@ -465,7 +397,7 @@
          id="tspan6501"
          y="219.28416"
          x="215.26961"
-         sodipodi:role="line">adjustView()</tspan></text>
+         sodipodi:role="line">transform()</tspan></text>
     <path
        sodipodi:nodetypes="cc"
        inkscape:connector-curvature="0"
@@ -475,62 +407,21 @@
     <text
        xml:space="preserve"
        style="font-size:12px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-       x="215.26961"
+       x="275.32166"
        y="402.1413"
        id="text6505"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
-         x="215.26961"
+         x="275.32166"
          y="402.1413"
          id="tspan6507"
-         style="font-size:7px;text-align:center;text-anchor:middle">selectGridLocation()</tspan></text>
-    <path
-       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Lend)"
-       d="m 412.89985,443.73698 81.56982,0.37881"
-       id="path6517"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="cc" />
-    <text
-       sodipodi:linespacing="125%"
-       id="text6519"
-       y="437.85559"
-       x="453.07217"
-       style="font-size:12px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-       xml:space="preserve"><tspan
-         style="font-size:7px;text-align:center;text-anchor:middle"
-         id="tspan6521"
-         y="437.85559"
-         x="453.07217"
-         sodipodi:role="line">[blank space?]</tspan></text>
-    <path
-       sodipodi:nodetypes="cc"
-       inkscape:connector-curvature="0"
-       id="path6523"
-       d="m 412.89985,375.70127 81.56982,0.37881"
-       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Lend)" />
-    <text
-       xml:space="preserve"
-       style="font-size:12px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-       x="453.07217"
-       y="361.96274"
-       id="text6525"
-       sodipodi:linespacing="125%"><tspan
-         sodipodi:role="line"
-         x="453.07217"
-         y="361.96274"
-         id="tspan6527"
-         style="font-size:7px;text-align:center;text-anchor:middle">[block exists?]</tspan><tspan
-         sodipodi:role="line"
-         x="453.07217"
-         y="370.71274"
-         style="font-size:7px;text-align:center;text-anchor:middle"
-         id="tspan6529">activate()</tspan></text>
+         style="font-size:7px;text-align:center;text-anchor:middle">activate() (physics selection from Godot's RigidBody)</tspan></text>
     <rect
        style="fill:#e4e4e4;fill-opacity:1;stroke:#000000;stroke-width:0.5110895;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
        id="rect3068"
        width="14.488911"
        height="149.48891"
-       x="493.47089"
+       x="391.32803"
        y="339.29605"
        rx="2.7708421"
        ry="1.5728775" />
@@ -538,17 +429,17 @@
        sodipodi:linespacing="125%"
        id="text3070"
        y="326.427"
-       x="500.26962"
+       x="398.12677"
        style="font-size:12px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
        xml:space="preserve"><tspan
          style="font-size:7px;text-align:center;text-anchor:middle"
          id="tspan3072"
          y="326.427"
-         x="500.26962"
+         x="398.12677"
          sodipodi:role="line">Delegated to</tspan><tspan
          style="font-size:7px;text-align:center;text-anchor:middle"
          y="335.177"
-         x="500.26962"
+         x="398.12677"
          sodipodi:role="line"
          id="tspan3074">other use-cases</tspan></text>
   </g>
