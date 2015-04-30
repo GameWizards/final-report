@@ -42,13 +42,13 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.9899495"
-     inkscape:cx="192.55869"
-     inkscape:cy="224.71762"
+     inkscape:zoom="1.4"
+     inkscape:cx="191.66457"
+     inkscape:cy="228.46858"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
-     inkscape:window-width="958"
+     inkscape:window-width="1534"
      inkscape:window-height="1061"
      inkscape:window-x="0"
      inkscape:window-y="0"
@@ -76,7 +76,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -182,27 +182,32 @@
        xml:space="preserve"
        style="font-size:12px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
        x="153.49255"
-       y="76.608086"
+       y="70.893806"
        id="text5856"
        sodipodi:linespacing="125%"><tspan
          id="tspan5860"
          sodipodi:role="line"
          x="153.49255"
-         y="76.608086"
+         y="70.893806"
          style="font-size:7px;text-align:center;text-anchor:middle">Host Match</tspan><tspan
          sodipodi:role="line"
          x="153.49255"
-         y="85.358086"
+         y="79.643806"
          style="font-size:7px;text-align:center;text-anchor:middle"
          id="tspan6571">Button</tspan><tspan
          sodipodi:role="line"
          x="153.49255"
-         y="94.108086"
+         y="88.393806"
+         style="font-size:7px;text-align:center;text-anchor:middle"
+         id="tspan5676">(Godot class)</tspan><tspan
+         sodipodi:role="line"
+         x="153.49255"
+         y="97.143806"
          style="font-size:7px"
          id="tspan5862" /><tspan
          sodipodi:role="line"
          x="153.49255"
-         y="102.85809"
+         y="105.89381"
          id="tspan5864"
          style="font-size:7px" /></text>
     <path
@@ -578,28 +583,28 @@
     <text
        xml:space="preserve"
        style="font-size:12px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-       x="221.14903"
-       y="209.75793"
+       x="235.78664"
+       y="205.21225"
        id="text6689"
        sodipodi:linespacing="125%"><tspan
          id="tspan6691"
          sodipodi:role="line"
-         x="221.14903"
-         y="209.75793"
-         style="font-size:7px">Online player(s)</tspan><tspan
+         x="235.78664"
+         y="205.21225"
+         style="font-size:7px">Client</tspan><tspan
          sodipodi:role="line"
-         x="221.14903"
-         y="218.50793"
+         x="235.78664"
+         y="213.96225"
          style="font-size:7px"
          id="tspan6693" /><tspan
          sodipodi:role="line"
-         x="221.14903"
-         y="227.25793"
+         x="235.78664"
+         y="222.71225"
          id="tspan6695"
          style="font-size:7px" /></text>
     <path
-       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:6, 2;stroke-dashoffset:0;marker-end:none"
-       d="m 245.75651,163.02894 0,307.51532"
+       style="fill:none;stroke:#000000;stroke-width:0.91674906;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:5.50049434, 1.83349811;stroke-dashoffset:0;marker-end:none"
+       d="m 245.75651,212.09952 0,258.44474"
        id="path6699"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cc" />
@@ -616,40 +621,8 @@
        sodipodi:nodetypes="cc"
        inkscape:connector-curvature="0"
        id="path6703"
-       d="m 257.84144,273.36054 81.56982,0.37881"
-       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Lend)" />
-    <text
-       xml:space="preserve"
-       style="font-size:12px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-       x="297.73846"
-       y="260.3363"
-       id="text6705"
-       sodipodi:linespacing="125%"><tspan
-         id="tspan6707"
-         sodipodi:role="line"
-         x="297.73846"
-         y="260.3363"
-         style="font-size:7px;text-align:center;text-anchor:middle">[if allowed]</tspan><tspan
-         sodipodi:role="line"
-         x="297.73846"
-         y="269.0863"
-         style="font-size:7px;text-align:center;text-anchor:middle"
-         id="tspan6845">Configure</tspan><tspan
-         id="tspan6709"
-         sodipodi:role="line"
-         x="297.73846"
-         y="277.8363"
-         style="font-size:7px;text-align:center;text-anchor:middle" /><tspan
-         sodipodi:role="line"
-         x="297.73846"
-         y="286.5863"
-         style="font-size:7px"
-         id="tspan6711" /><tspan
-         sodipodi:role="line"
-         x="297.73846"
-         y="295.3363"
-         id="tspan6713"
-         style="font-size:7px" /></text>
+       d="m 339.41126,273.36054 -81.56982,0.37881"
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Lend);stroke-miterlimit:4;stroke-dasharray:2,1;stroke-dashoffset:0" />
     <rect
        ry="3.5"
        rx="4.6443715"
@@ -691,7 +664,7 @@
          sodipodi:role="line"
          x="98.738396"
          y="161.04613"
-         style="font-size:7px;text-align:center;text-anchor:middle">Share Match ID</tspan><tspan
+         style="font-size:7px;text-align:center;text-anchor:middle">Share IP Address</tspan><tspan
          id="tspan6857"
          sodipodi:role="line"
          x="98.738396"
