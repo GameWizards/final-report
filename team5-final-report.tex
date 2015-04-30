@@ -14,8 +14,7 @@
 
 \begin{document}
 \sf % sans serif
-\title{Anttris}
-% \subtitle{Team 5 -- Design Specification}
+\title{Anttris \\ Team 5 -- Final Report}
 \author{%
 \and Chris Aikman
 \and Benji Cope
@@ -356,27 +355,15 @@ is trivial.
     \end{figure}
 }
 
-\subsection{Class Diagrams}
+\subsection{Class Diagram}
+This class diagram shows the most important objects in the game.
+Notice the heavy use of Godot's built-in classes.
 
-\foreach \n/\desc in {%
-{{class_edit.png%
-}/{UML Class diagram for the puzzle editing Use Case. Notice TestGame is used
-to start a new GameEngine to test the current puzzle.}},
-{{class_join.png%
-}/{UML Class diagram for a client joining a game.}},
-{{class_solve.png%
-}/{UML Class diagram for solving the game. }},
-{{class_host.png%
-}/{UML Class diagram for hosting a game.}},
-{{class_navigate.png%
-}/{UML Class diagram for navigating the puzzle.}}}
-{%
-    \begin{figure}[H]
-        \centering
-        \includegraphics[width=0.7\textwidth]{\n}\par
-        \caption{\desc}
-    \end{figure}
-}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\linewidth]{class_diagram.png}
+    \caption{Crucial objects of Anttris.}
+\end{figure}
 
 \section{Subsystem Design} % CA
 Anttris is broken down into the following four subsytems: GUI, Networking, File Manager and Game.
@@ -490,7 +477,7 @@ For the first part of the testing plan, we tested the game on multiple physical 
 The interface of the game is what the user will be interacting with, so we wanted to make sure that the interactions of each function worked correctly and displayed the correct information to the user.
 
  To test the interface of the game we:
- 
+
 \begin{enumerate}
 \item Test the menu options
 \item Test single-player Game Mode (Single-player, New Game, Continue Game)
@@ -502,9 +489,9 @@ The interface of the game is what the user will be interacting with, so we wante
 After testing the interface of the game and making sure each of the game options and modes work correctly, we will review errors and bugs we encountered during the Black Box testing. Upon completion we will need to begin White Box testing and testing that the correct values are being passed in the code.
 
 \subsection{Testing Menu Options}
-While testing the menu options, we clicked each of the available options to make sure that the selected menu option displayed the next options or pages the user needed to see. 
-For instance, when we selected the single-player game option, it returned with the correct corresponding options. 
-We tested each of the options the user may choose from and tested whether or not the user could reselect options by returning to the previous options. Testing this first was the most important since it will be the first thing the user will see when playing our game as well as deciding which type of game the user will be playing. 
+While testing the menu options, we clicked each of the available options to make sure that the selected menu option displayed the next options or pages the user needed to see.
+For instance, when we selected the single-player game option, it returned with the correct corresponding options.
+We tested each of the options the user may choose from and tested whether or not the user could reselect options by returning to the previous options. Testing this first was the most important since it will be the first thing the user will see when playing our game as well as deciding which type of game the user will be playing.
 Each of the options worked correctly and displayed the correct information needed.
 
 \subsection{Test Single-Player Mode}
@@ -524,11 +511,11 @@ After we tested the Puzzle Editor, we tested whether or not we could solve puzzl
 The Multiplayer Game Mode was the last thing we tested since it involved the interactions between two computers. We tested the Create and Host Match options like we did with the menu options and the different game modes similarly to the single-player and Multiplayer game modes. The most important thing we needed to test for the multiplayer was the interactions between the two players. In order to test the interactions, we needed to make sure that the two players were able to connect to each other and preform actions in the interface and when solving puzzles with each other. In the end, we got multiplayer to work between two players on the same network.
 
 \subsection{Unit Testing}
-Part of ensuring that critical calls in our code worked correctly was implementing unit testing. Fortunately, a member of Godot's community authored a handy test driven development framework, known as GUT, the [G]odot [U]nit [T]esting framework. \cite{gut:tdd} 
+Part of ensuring that critical calls in our code worked correctly was implementing unit testing. Fortunately, a member of Godot's community authored a handy test driven development framework, known as GUT, the [G]odot [U]nit [T]esting framework. \cite{gut:tdd}
 
-Since we had decided early on to incorporate continuous integration into our workflow, we wanted to have our unit tests be run on Travis, so that our tests would run every time a build triggered. This alerts to issues immediately so nothing gets broken. We mainly tested methods used frequently to get and set various things in order to ensure that they were behaving as expected. 
+Since we had decided early on to incorporate continuous integration into our workflow, we wanted to have our unit tests be run on Travis, so that our tests would run every time a build triggered. This alerts to issues immediately so nothing gets broken. We mainly tested methods used frequently to get and set various things in order to ensure that they were behaving as expected.
 
-Hugo devised a Python script to interface with the Godot headless server on the test server so that the multitude of return values used were caught in a useful manner. 
+Hugo devised a Python script to interface with the Godot headless server on the test server so that the multitude of return values used were caught in a useful manner.
 
 \subsection{White Box Testing}
 The second part of the testing plan, we used the White Box testing method in which we will be dealing with the actual code of the game. We need to make sure that the code of the game is working correctly. We needed to make sure the code of the game was working correctly.
@@ -550,7 +537,7 @@ All of the main features we planned for the game to have were successfully imple
 In addition, Anttris has an official game website! The website features explanations of the game rules, convenient download links, and screenshots of the game. The website was developed by us, and can be viewed by pointing a browser at \href{http://gamewizards.github.io}{our github.io page}.
 
 
-Finally, Anttris was built using git and GitHub. This means that the whole Anttris development process and final code is available for download at \href{http://github.com/gamewizards/anttris/}{our Github repository}. The above two should be clickable links if viewed in most modern PDF readers. 
+Finally, Anttris was built using git and GitHub. This means that the whole Anttris development process and final code is available for download at \href{http://github.com/gamewizards/anttris/}{our Github repository}. The above two should be clickable links if viewed in most modern PDF readers.
 
 In case they are not, here are the raw URLs: \url{http://gamewizards.github.io} and \url{http://github.com/gamewizards/anttris/}
 
@@ -560,13 +547,27 @@ Throughout the project's development, we experienced a few minor difficulties. A
 
 The biggest issue we ran into involved the game's original rules. While the rules were a neat idea, determining the solvability of a puzzle proved to be an NP-hard problem. After realizing the complexity of solving puzzles, we simplified the rules in a way that was interesting, fun and had a realistic solution-check time.
 
-Another difficulty we had involved the Godot Game Engine used to implement Anttris. The software is still currently in Beta and as such, there are still minor issues throughout the application. One especially annoying Godot issue was version controlling some of the resource files that were compiled into binary. This meant that only one person could work on scene files at a time. This lead to occasional conflicts when two people mistakenly worked on the same scene file. Another one was with using globals within Anttris. Due to the way that the scene tree works, any globally loaded objects in the scene tree get deleted on scene change. Most of the other issues were solved through digging into Godot's source code or by finding workarounds.
+Another difficulty we had involved the Godot Game Engine used to implement Anttris. The software is still currently in Beta and as such, there are still minor issues throughout the application. One especially annoying Godot issue was version controlling some of the resource files that were compiled into binary. This meant that only one person could work on scene files at a time. This lead to occasional conflicts when two people mistakenly worked on the same scene file. Another one was with using globals within Anttris. Due to the way that the scene tree works, any globally loaded objects in the scene tree get deleted on scene change.
+
+The issue with Godot was solved by using sticking to script files, which acan be
+very powerful in Godot. For this, the team had to familiarize themselves with
+Godot's 400+ game engine classes. Godot's limited documentation and beta status
+also made it difficult to find help.
+Some issues had to be solved by digging into Godot's source code or by finding
+alternative solutions.
+
+One example is seen in the class diagram.
+Notice that Editor  provides the loadDialog and saveDialog functions.
+DataManager should be in charge of that, but Godot was not instantiating
+the FileDialog properly. FileDialog had to be instantiated in a Godot Node.
+
+
 \subsection{Journal of Project Activities} % SEAN
 %(This is your group journal)
 % add Github commit logs?
 Team organization was important, so we organized weekly in-person meetings at various locations on campus. Most commonly we used Cramer 213, but also met in the library a few times. For all other times, we had all team communications centralized to Slack, so that everyone could talk to the team in an organized manner at any time of the day, as well as get centralized notifications from Github and Travis CI.
 
-We used a modified Scrum methodology to organize the project. Agile development is great, but the normal schedules used by Agile teams are not necessarily optimal for students, so we settled on mainly using sprints as general guidelines for milestones. We also did not use daily in person standups, preferring instead to utilize Slack to talk constantly about what we were doing. Additionally, we combined retrospectives into our real time workflow, rather than having a meeting specifically for a retrospective. 
+We used a modified Scrum methodology to organize the project. Agile development is great, but the normal schedules used by Agile teams are not necessarily optimal for students, so we settled on mainly using sprints as general guidelines for milestones. We also did not use daily in person standups, preferring instead to utilize Slack to talk constantly about what we were doing. Additionally, we combined retrospectives into our real time workflow, rather than having a meeting specifically for a retrospective.
 
 \subsubsection{Project Statistics}
 Below are some figures taken from both Slack (communication statistics) and Github (coding statistics.) Please note that Github unfortunately only reports statistics for the default branch (in our case, master.) Thus, this data may not accurately reflect work put into branches. This is particularly true of Figure \ref{code:freq}, as it reflects a lot of the code that was merged into master towards the end of the project cycle. Additionally, Figure \ref{code:graph} is the state of the network graph on April 28 at about 10 PM. It will probably change a bit as more work is done, but it reflects how our branches have been fitting together.
@@ -627,9 +628,8 @@ Here is our updated Gantt chart showing our progress.
 
 \section{Appendices}
 % Source code, java-doc version of your classes, etc
-Our project has a \href{http://gamewizards.github.io}{website at github.io}(clickable link.) Our project repository is \href{http://github.com/gamewizards/anttris/}{located on Github} (also should be a clickable link.) In case those hyperlinks don't work, find the raw URLs below. 
+Our project has a \href{http://gamewizards.github.io}{website at github.io}(clickable link.) Our project repository is \href{http://github.com/gamewizards/anttris/}{located on Github} (also should be a clickable link.) In case those hyperlinks don't work, find the raw URLs below.
 
-Website: \url{http://gamewizards.github.io} \\
 Github repo: \url{http://github.com/gamewizards/anttris/}
 
 
