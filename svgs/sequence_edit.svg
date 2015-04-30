@@ -43,12 +43,12 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.4"
-     inkscape:cx="298.68806"
-     inkscape:cy="180.31201"
+     inkscape:cx="135.12984"
+     inkscape:cy="189.76773"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
-     inkscape:window-width="1918"
+     inkscape:window-width="1534"
      inkscape:window-height="1061"
      inkscape:window-x="0"
      inkscape:window-y="0"
@@ -76,7 +76,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -289,7 +289,7 @@
          sodipodi:role="line"
          x="281.40045"
          y="53.627117"
-         style="font-size:7px;text-align:center;text-anchor:middle">&lt;&lt;Boundary/Control&gt;&gt;</tspan><tspan
+         style="font-size:7px;text-align:center;text-anchor:middle">&lt;&lt;Boundary&gt;&gt;</tspan><tspan
          sodipodi:role="line"
          x="281.40045"
          y="62.377117"
@@ -311,7 +311,7 @@
          id="tspan7207"
          y="80.143623"
          x="279.42471"
-         sodipodi:role="line">BlockModifier</tspan></text>
+         sodipodi:role="line">Editor</tspan></text>
     <path
        style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:6, 2;stroke-dashoffset:0;marker-end:none"
        d="m 279.45431,97.090508 0,329.195972"
@@ -470,7 +470,7 @@
          y="242.65732"
          x="222.51904"
          sodipodi:role="line"
-         id="tspan7261">open()</tspan><tspan
+         id="tspan7261">activate()</tspan><tspan
          style="font-size:7px;text-align:center;text-anchor:middle"
          y="251.40732"
          x="222.51904"
@@ -504,28 +504,28 @@
     <text
        xml:space="preserve"
        style="font-size:12px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-       x="344.7475"
-       y="222.95935"
+       x="342.22211"
+       y="219.67635"
        id="text7275"
        sodipodi:linespacing="125%"><tspan
          id="tspan7277"
          sodipodi:role="line"
-         x="344.7475"
-         y="222.95935"
-         style="font-size:7px;text-align:center;text-anchor:middle">newBlock()</tspan><tspan
+         x="342.22211"
+         y="219.67635"
+         style="font-size:7px;text-align:center;text-anchor:middle">addNeighbor(click_normal)</tspan><tspan
          id="tspan7279"
          sodipodi:role="line"
-         x="344.7475"
-         y="231.70935"
+         x="342.22211"
+         y="228.42635"
          style="font-size:7px;text-align:center;text-anchor:middle" /><tspan
          sodipodi:role="line"
-         x="344.7475"
-         y="240.45935"
+         x="342.22211"
+         y="237.17635"
          style="font-size:7px"
          id="tspan7281" /><tspan
          sodipodi:role="line"
-         x="344.7475"
-         y="249.20935"
+         x="342.22211"
+         y="245.92635"
          id="tspan7283"
          style="font-size:7px" /></text>
     <path
@@ -606,7 +606,7 @@
          sodipodi:role="line"
          x="344.7475"
          y="274.98221"
-         style="font-size:7px;text-align:center;text-anchor:middle">modifyBlock()</tspan><tspan
+         style="font-size:7px;text-align:center;text-anchor:middle">replaceBlock()</tspan><tspan
          id="tspan7448"
          sodipodi:role="line"
          x="344.7475"
